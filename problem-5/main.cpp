@@ -1,6 +1,7 @@
 #include "main.h"
 
 long factorial(int n) {
-    // Write your code here
-    return 0;
+    if (n < 0) return -1;
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
 }
